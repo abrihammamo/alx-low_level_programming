@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - function is entry point for any method
+ *
+ * Return: always return 0
+ */
+
 int main(void)
 {
 
