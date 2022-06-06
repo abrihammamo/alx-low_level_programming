@@ -20,8 +20,8 @@ int main(void)
 		{
 			if (p != d)
 			{
-				putchar(d);
-				putchar(p);
+				putchar((d % 10) + '0');
+				putchar((p % 10) + '0');
 				if (d == 8 && p == 9)
 					continue;
 				putchar(',');
