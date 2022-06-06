@@ -12,15 +12,15 @@ int main(void)
 	 * d2: is digit two
 	 */
 
-	int d, p;
+	int d1, d2;
 
-	for (d = '0'; d < '9'; d++)
+	for (d1 = 0; d1 < 10; d1++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (d2 = d1 + 1; d2 <= '9'; d2++)
 		{
-			putchar((d % 10) + '0');
-			putchar((p % 10) + '0');
-				if (d == 8 && p == 9)
+			putchar((d1 % 10) + '0');
+			putchar((d2 % 10) + '0');
+				if (d1 == 8 && d2 == 9)
 					continue;
 				putchar(',');
 				putchar(' ');
