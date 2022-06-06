@@ -12,18 +12,17 @@ int main(void)
 	 * d2: is digit two
 	 */
 
-	int d1;
-	int d2;
+	int d, p;
 
-	for (d1 = '0'; d1 <= '9'; d1++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (d2 = d1 + 1; d2 <= '9'; d2++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			if (d1 != d2)
+			if (p != d)
 			{
-				putchar(d1);
-				putchar(d2);
-				if (d1 == 8 && d2 == 9)
+				putchar(d);
+				putchar(p);
+				if (d == 8 && p == 9)
 					continue;
 				putchar(',');
 				putchar(' ');
